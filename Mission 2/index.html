@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css"> <!-- 외부 스타일시트 연결 -->
+<title>투두 리스트</title>
+</head>
+<body>
+<h1>UMC STUDY PLAN</h1> <!-- 페이지 제목 -->
+<hr> <!-- 구분선 -->
+<div class="container">
+    <input type="text" id="taskInput" placeholder="스터디 계획을 작성해보세요!"> <!-- 스터디 계획 입력란 -->
+    <div class="split">
+        <div id="todoContainer">
+            <h3>해야할 일</h3> <!-- 해야할 일 영역 제목 -->
+            <ul id="todoList" class="list"></ul> <!-- 해야할 일 목록 -->
+        </div>
+        <div id="completedContainer">
+            <h3>해낸 일</h3> <!-- 해낸 일 영역 제목 -->
+            <ul id="completedList" class="list"></ul> <!-- 해낸 일 목록 -->
+        </div>
+    </div>
+</div>
+<srcipt src="index.js"></srcipt>
+</body>
+</html>
