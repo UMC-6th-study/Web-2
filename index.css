@@ -1,0 +1,51 @@
+body {
+  background-color: #22254b;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-container {
+  position: relative;
+  width: 250px;
+  margin: 16px;
+}
+
+.movie-container img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.movie-info h4,
+.movie-info span {
+  margin: 0;
+  color: white;
+}
+
+.movie-info h4 {
+  font-size: 1.1rem;
+}
+
+.movie-info span {
+  font-size: 0.9rem;
+}
+
+.movie-info .overview {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
