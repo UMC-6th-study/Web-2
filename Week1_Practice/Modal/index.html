@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>모달</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <h1>안녕하세요!</h1>
-    <p>내용내용내용</p>
-    <button id="open">버튼 열기</button>
-    <div class="modal-wrapper" style="display: none;">
-      <div class="modal">
-        <div class="modal-title">안녕하세요</div>
-        <p>모달 내용</p>
-        <div class="close-wrapper">
-          <button id="close">닫기</button>
+    <head>
+        <title>모달</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>안녕하세요!</h1>
+        <p>내용내용내용</p>
+        <button id="open-btn">버튼 열기</button>
+        <!-- 모달을 열면 나오는 부분 -->
+        <div class="modal-wrapper" style="display: none"> 
+            <div class="modal">
+                <div class="modal-title">안녕하세요</div>
+                <p>모달 내용은 어쩌고 저쩌고..</p>
+                <div class="close">
+                    <button id="close-btn">닫기</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
+        <!-- 여기까지 -->
+        <script src="index.js"></script>
+    </body>
 </html>
