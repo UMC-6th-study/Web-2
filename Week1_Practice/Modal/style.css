@@ -1,8 +1,9 @@
-body {
+body{
     font-family: sans-serif;
-  }
-  
-  .modal-wrapper {
+}
+
+/* 모달을 감싸는 부분, 뒷배경 */
+.modal-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,14 +14,17 @@ body {
     align-items: center;
     justify-content: center;
   }
-  
-  .modal {
+
+  /* 모달 박스 */
+ .modal {
     background: white;
     padding: 24px 16px;
     border-radius: 4px;
-    width: 320px;
+    width: 400px;
+    height: 100px;
   }
-  
+
+  /* 모달 안에 들어가는 내용들 */
   .modal-title {
     font-size: 24px;
     font-weight: bold;
@@ -30,6 +34,6 @@ body {
     font-size: 16px;
   }
   
-  .close-wrapper {
+  .close {
     text-align: right;
   }
