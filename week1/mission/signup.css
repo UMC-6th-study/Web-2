@@ -27,15 +27,15 @@ body {
     font-size: 30px;
 }
 
-.user-info input[type="text"],
-.user-info input[type="email"],
-.user-info input[type="number"],
-.user-info input[type="password"] {
+.user_info input[type="text"],
+.user_info input[type="email"],
+.user_info input[type="number"],
+.user_info input[type="password"] {
     width: 300px;
     padding: 8px;
     border: 2px solid #ccc;
     border-radius: 5px;
-    background-color: transparent; /* 입력창을 투명하게 만듭니다 */
+    background-color: transparent; 
     transition: border-color 0.3s ease;
     border-color: white;
 }

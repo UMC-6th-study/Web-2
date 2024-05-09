@@ -2,13 +2,13 @@ const username = document.getElementById("name");
 const email = document.getElementById("email");
 const age = document.getElementById("age");
 const password = document.getElementById("password");
-const chpw = document.getElementById("chpw");
+const chpw = document.getElementById("checkpassword");
 const signup = document.getElementById("signup");
 const nameMessage = document.getElementById("nameMessage");
 const emailMessage = document.getElementById("emailMessage");
 const ageMessage = document.getElementById("ageMessage");
 const pwMessage = document.getElementById("pwMessage");
-const chpwMessage = document.getElementById("chpwMessage");
+const chpwMessage = document.getElementById("checkpwMessage");
 var pattern = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[~@#$!%*?&])[a-zA-Z\d~@#$!%*?&]{8,}$/;
 let nameValue = false;
 let emailValue = false;
@@ -76,7 +76,7 @@ signup.addEventListener("click", function () {
             pwMessage.style.color = 'red';
         }
         else {
-            pwMessage.textContent = '올바른 비밀번호 입니다!';
+            pwMessage.textContent = '올바른 비밀번호입니다!';
             pwMessage.style.color = 'green';
             pwValue = true;
             num = num + 1;
@@ -108,13 +108,11 @@ signup.addEventListener("click", function () {
 const close = document.getElementById("close");
 const modal = document.getElementById("modal-wrapper");
 
-signup.onclick = () => { //Modal 조건
+signup.onclick = () => { 
     if (num == 5) {
         modal.style.display = 'flex';
     }
-    //if (nameValue && emailValue && ageValue && pwValue && chpwValue){
-    //    modal.style.display = "flex";
-    //}
+
 };
 
 close.onclick = () => {
